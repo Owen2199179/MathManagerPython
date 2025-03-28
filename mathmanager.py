@@ -9,8 +9,15 @@ class mathmanager:
 	def multiply(self, a, b):
 			return a*b
 	
-	def interest(self, a, b):
-			return a * (1.038^b)
+	def interest(self, deposit, term):
+		if deposit <= 0:
+			return -1
+		if term == 1:
+			return (0.038*deposit)/12
+		elif term ==2:
+			return (0.036*deposit)/12
+		else:
+			return -2
 
 	def taxPaid(self, income):
 		if income < 12570:
