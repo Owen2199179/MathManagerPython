@@ -23,9 +23,12 @@ class mathmanager:
 		if income < 12570:
 			return 0
 		elif 12570 < income < 50270:
+			#return 0.2 * (income -12570)
 			return income * 0.8
 		elif 50370 < income < 125140:
+			#return 0.2 * (50270 - 12570) + 0.4 * (income - 50270)
 			return income * 0.6
 		else: 
+			#return 0.2 * (50270 - 12570) + 0.4 * (12570 - 50270) + 0.45 * (income - 125140)
 			return income * 0.55
 
