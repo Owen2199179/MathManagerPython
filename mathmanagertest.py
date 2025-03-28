@@ -13,3 +13,9 @@ class mathmanagertest(unittest.TestCase):
 	def testMultiply(self):
 		math = mathmanager()
 		self.assertEqual(math.multiply(0, 3), 0)
+
+	def testInterest(self):
+		math = mathmanager()
+		self.assertEqual(math)
+
+	#python -mpytest (file name)
